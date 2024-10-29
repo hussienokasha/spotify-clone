@@ -1,0 +1,50 @@
+<div
+  class="bg-black py-2 px-2 md:px-8 w-full flex align-center justify-between gap-3"
+>
+  <div class="logo">
+    <a href="">
+      <img
+        src="assets/logo/Spotify_logo_without_text.svg.png"
+        alt="spotify logo"
+        style="min-width: 50px; max-width: 50px"
+      />
+    </a>
+  </div>
+  <div class="search-bar flex align-center gap-3">
+    <div
+      class="w-12 h-12 rounded-full bg-gray-800 text-center cursor-pointer hidden md:block"
+      routerLink="/home"
+      routerLinkActive="bg-gray-600 text-gray-300"
+    >
+      <i class="pi pi-home text-white text-2xl pt-2"></i>
+    </div>
+    <div class="relative flex-shrink">
+      <i
+        class="pi pi-search text-gray-300 start-3 absolute top-1/2 -translate-y-1/2 text-xl"
+      ></i>
+      <input
+        type="text"
+        class="p-2 ps-9 rounded-full bg-gray-800 h-full w-full"
+        placeholder="What do you want to play?"
+        routerLink="/search"
+      />
+    </div>
+  </div>
+  <div class="flex gap-3">
+    <button
+      class="text-gray-300 hover:font-semibold hover:text-white hidden md:block"
+      routerLink="/signup"
+    >
+      Sign up
+    </button>
+    <button
+      class="bg-white rounded-full px-7 hover:font-medium hidden md:block"
+      routerLink="/login"
+    >
+      Log in
+    </button>
+    <button class="block md:hidden">
+      <i class="pi pi-align-right text-white text-2xl"></i>
+    </button>
+  </div>
+</div>
